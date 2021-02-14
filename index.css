@@ -175,7 +175,7 @@ a:visited{
     display: flex;
     align-items:center;
     justify-content: space-around; /* 좌우 가운데로 */
-    background-image: url(../images-for-site/white-tree.jpg);
+    background-image: url(white-tree.jpg);
     background-size: cover;
     font-family: 'Ubuntu', sans-serif ;
 }
