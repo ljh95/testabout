@@ -1,0 +1,349 @@
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.582);
+}
+
+a:visited{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}   
+
+.scene {
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+}
+
+.scene > * {
+    /* border: 3px solid black; */
+}
+
+/* ===================== intro ================= */
+#intro {
+    background-image: url(../images-for-site/dawn.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    flex-direction: column;
+}
+.intro img {
+    margin-top: 15vh;
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;
+    border:  1.5px solid rgba(255, 255, 255, 0.836);
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+
+}
+.intro img:hover {
+    margin-top: 15vh;
+    border-radius: 50%;
+    width: 185px;
+    height: 185px;
+    border:  1.5px solid rgba(255, 255, 255, 0.836);
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+    transition-duration: 0.25s;
+}
+
+.intro h2 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgba(255, 255, 255, 0.603);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.836);
+    padding-bottom: 7px;
+}
+
+.intro-mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .intro-mid::after{
+    content: "장점: 사람들과 쉽게 친해짐\A단점: 쉽게 우울해짐";
+    white-space: pre;
+    display: none;
+} */
+.intro-mid:hover::after {
+    margin-top: 17vh;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.61);
+    font-family: 'Noto Sans KR', sans-serif;
+    content: "장점: 사람들과 쉽게 친해짐\A\A단점: 쉽게 우울해짐";
+    white-space: pre;
+}
+
+/* ===================== scene one ================= */
+
+.scene.one {
+    background-image: url(../images-for-site/white-struc.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* 좌우 가운데로 */
+}
+
+.category {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#node-image > a {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    margin-bottom: 15px;
+}
+
+.category > div > a > span {
+    font-size: 1.4rem;
+}
+.category > div > a {
+    text-decoration: none;
+}
+
+
+#node-image {
+    width: auto; height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: rgba(79, 134, 79, 0.377);
+    border-radius: 25%;
+    padding: 15px;
+}
+
+
+#react-image {
+    width: auto; height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    
+    min-width: 100px;
+    min-height: 100px;
+
+    background-color: rgba(77, 117, 141, 0.377);
+    border-radius: 25%;
+    padding: 10px;
+}
+/* ======== hover ====== */
+#node-image:hover {
+    width: auto; height: auto;
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+    transition-duration: 0.5s;
+}
+#react-image:hover {
+    width: auto; height: auto;
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+    transition-duration: 0.5s;
+}
+
+
+
+
+/* ===================== scene two ================= */
+.scene.two {
+    display: flex;
+    align-items:center;
+    justify-content: space-around; /* 좌우 가운데로 */
+    background-image: url(../images-for-site/white-tree.jpg);
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif ;
+}
+
+.habbit-item{
+    border: 30px solid blue;
+    margin-left: 300px;
+    max-width: 300px;
+    margin: 100px;
+    background-color: rgba(248,248,248,255);
+}
+
+
+
+.habbit-item img {
+    border-radius: 50%;
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.scene.two figure {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 2px 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: opacity .4s ease;
+}
+.scene.two figure img{
+    width: 100%;
+}
+.scene.two figure figcaption {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-top: 11px;
+}
+
+/* ============= tree ====================== */
+
+.tree{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-top: 11px;
+    list-style: none;
+}
+
+.tree label{
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 20%;
+}
+
+.tree li ul {
+    padding: 10px;
+    margin-top: 11px;
+}
+.tree li ul li {
+    padding-bottom: 4px;
+    color: gray;
+}
+.tree li ul li a{
+    text-decoration: none;
+}
+
+.tree li ul li a:hover {
+    background-color: rgba(128, 128, 128, 0.521);
+}
+
+.tree label:hover {
+    background-color:  rgba(196, 198, 214, 0.5);
+    transition-duration: 0.5s;
+    font-weight: 700;
+}
+
+.tree input[type="checkbox"] {
+    display: none;
+    
+}
+.tree input[type="checkbox"]:not(:checked)~ul {
+    display: none;
+}
+
+
+
+/* ===================== scene three ================= */
+
+.scene.three {
+    background-image: url(../images-for-site/white-mauntain.jpg);
+}
+
+
+
+.git {
+    margin-bottom: 30px;
+}
+ .git a {
+     text-decoration: none;
+ }
+
+ .velog a {
+     text-decoration: none;
+     display: block;
+     margin-bottom: 0.5rem;
+ }
+/* ===================== header ================= */
+
+.scene header {
+    /* color: white; */
+    max-width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.scene header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+.scene header h1::after {
+    content: "";
+    border-bottom: 1px solid white;
+    width: 8rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+/* ===================== navbar ================= */
+
+.navbar {
+    position: fixed;
+    right: 0;
+    top: 14%;
+    margin-right: 10vw;
+    background-color: #ffffff56;
+    padding: 20px;
+    border-radius: 5px;
+}
+.navbar h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+.navbar > ul li a {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    margin: 3px;
+    text-decoration: none;
+    border-radius: 10%;
+    padding: 2px;
+}
+.navbar > ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.582);
+}
+.navbar > ul li a:link {
+    text-decoration: none; 
+}
+
+.navbar > a:visited {
+    text-decoration: none; 
+}
