@@ -32,7 +32,7 @@ a:visited{
 
 /* ===================== intro ================= */
 #intro {
-    background-image: url(../images-for-site/dawn.jpg);
+    background-image: url(dawn.jpg);
     background-size: cover;
     background-position: center;
 }
