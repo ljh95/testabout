@@ -99,7 +99,7 @@ a:visited{
 /* ===================== scene one ================= */
 
 .scene.one {
-    background-image: url(../images-for-site/white-struc.jpg);
+    background-image: url(images-for-site/white-struc.jpg);
     display: flex;
     align-items: center;
     justify-content: space-around; /* 좌우 가운데로 */
